@@ -93,6 +93,7 @@ class DesignToolStage extends Component {
     const boardLayer = this.stage.getStage().find('.boardLayer')[0];
     const croppedStage = getCroppedStage(boardLayer);
     const imageDataURL = croppedStage.node.toDataURL();
+    console.log(imageDataURL)
     const footerText = `${currentProjectName} created ${getTimeDateStamp()}`;
 
     const pxPerMillimeter = 0.2458333;
