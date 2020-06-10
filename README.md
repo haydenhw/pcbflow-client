@@ -1,6 +1,6 @@
 PCB Flow
 =================
-![App screenshot](client/public/images/dual-ethernet-board.png)
+![App screenshot](public/images/dual-ethernet-board.png)
 
 ## Live App
 https://pcbflow.haydenhw.com/
