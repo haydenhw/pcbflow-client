@@ -1,3 +1,4 @@
+// TODO remove .save-button comments
 export const toolTips = [
   {
     text: 'Drag the COM Connector module onto the board ',
