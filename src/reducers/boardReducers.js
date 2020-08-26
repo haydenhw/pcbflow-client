@@ -1,5 +1,4 @@
 import * as actions from 'actions/indexActions';
-import doesModifyProject from 'helpers/doesModifyProject';
 
 const defaultboardSpecs = {
   height: 300,

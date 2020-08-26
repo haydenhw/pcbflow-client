@@ -1,4 +1,4 @@
-// *refactor for readability
+// TODO refactor for readability
 export function getUnmetDependencyIds(modules = [], selectedModuleDependencies) {
   const onBoardIds = modules.map(module => module.id);
   const unmetDependencyIds = selectedModuleDependencies.filter(id => onBoardIds.indexOf(id) === -1);
