@@ -19,24 +19,18 @@ import rotate from 'helpers/rotate';
 import { toolTips } from 'config/toolTips';
 import { tourSteps, dependecyDemo } from './DesignToolTourSteps';
 import { tutorialSteps } from './DesignToolTutorialSteps';
-import Board from 'components/board/Board';
 import DesignToolBoardFrame from './DesignToolBoardFrame';
 import DesignToolInfoButton from './DesignToolInfoButton';
 import DesignToolStage from './DesignToolStage';
-// import DesignToolTodo from './DesignToolTodo';
 import DocumentationCard from './DesignToolDocumentationCard';
 import Footer from 'components/footer/Footer';
 import Modal from 'components/modal/Modal';
 import Module from 'components/modules/ModulesItem';
-import ModuleContainer from 'components/modules/Modules';
 import SideBar from 'components/sidebar/SideBar';
 import TopNavbar from 'components/top-navbar/TopNavbar';
-import TopNavbarEditableText from 'components/top-navbar/TopNavbarEditableText';
 
 import './design-tool-styles/_DesignToolDocumentationCard.scss';
 import './design-tool-styles/_DesignToolOnboardModal.scss';
-
-import { devMode } from 'config/devMode';
 
 
 let DesignTool = class extends Component {
@@ -63,6 +57,7 @@ let DesignTool = class extends Component {
       shouldUpdateThumbnail: false,
       wasDocumentationOpen: false,
     };
+
     this.handleJoyrideCallback = this.handleJoyrideCallback.bind(this);
     this.handleRightButtonClick = this.handleRightButtonClick.bind(this);
     this.hideFloatingElements = this.hideFloatingElements.bind(this);
@@ -567,7 +562,7 @@ let DesignTool = class extends Component {
     const { joyride } = this.props;
 
     const joyrideProps = {
-      autoStart: true || joyride.autoStart || this.state.autoStart,
+      autoStart: true,
       callback: this.handleJoyrideCallback,
       debug: false,
       disableOverlay: true,

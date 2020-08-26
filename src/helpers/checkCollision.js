@@ -26,11 +26,6 @@ export default function checkCollision(nodeArray, callback) {
 
         if (collideHoriz && collideVert) {
           collidingNodes.push(otherNode);
-
-           // prevents duplicates in collidingNodes array but is commented out at the moment to favor performance
-         /* const existsInCollidingNodes = collidingNodes.findIndex((node) => node === otherNode );
-           if(existsInCollidingNodes === -1)
-           collidingNodes.push(otherNode);*/
         }
       }
     });

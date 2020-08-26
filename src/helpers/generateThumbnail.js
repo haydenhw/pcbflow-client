@@ -1,5 +1,5 @@
 import Konva from 'konva';
-// Just move this logic into  getStageFromJSON  in ProjectsItemFrame
+// TODO Just move this logic into  getStageFromJSON  in ProjectsItemFrame
 function createTempElement(elementId) {
   return () => {
     const tempElement = document.createElement('div');
