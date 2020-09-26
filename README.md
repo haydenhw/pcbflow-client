@@ -3,7 +3,11 @@ PCB Flow
 ![App screenshot](public/images/dual-ethernet-board.png)
 
 ## Live App
-https://pcbflow.haydenhw.com/
+
+## Links
+* [Live Demo](https://pcbflow.haydenhw.com/)
+* [Client Repo](https://github.com/haydenhw/pcbflow-client)
+* [Server Repo ](https://github.com/haydenhw/pcbflow-server)
 
 ## Summary
 A drag and drop tool for designing electronic devices. Tailored specifically
@@ -19,12 +23,13 @@ to make electronics design accessible and approachable for non-engineers.
 * Knex
 * PostgreSQL
 * Mocha
-* Heroku
+* Docker
+* AWS (EC2, S3, CloudFront)
 
 API Docs
 =================
 
-## Get projects 
+## Get projects
 
 <strong>GET /api/projects</strong>
 
@@ -146,11 +151,11 @@ Successful response
 ]
 ```
 
-## Create project 
+## Create project
 <strong>POST /api/projects</strong>
 
 Example request body
-```json 
+```json
 {
   "user_id": "SJ9M3oy9U",
   "name": "New Project",
@@ -164,26 +169,26 @@ Example request body
 }
 ```
 
-## Update project 
+## Update project
 <strong>PATCH /api/projects/:projectId</strong>
 
 Example request body
 ```json
-{ 
+{
     "name": "Updated Project Name"
 }
 ```
-## Delete project 
+## Delete project
 <strong>DELETE /api/projects/:projectId</strong>
 
 Modules
 =================
 
-## Create module 
+## Create module
 <strong>POST /api/modules</strong>
 
 Example request body
-```json 
+```json
 {
     "id": 58,
     "project_id": 10,
@@ -214,15 +219,15 @@ Example request body
 }
 ```
 
-## Update module 
+## Update module
 <strong>PATCH /api/modules/:moduleId</strong>
 
 Example request body
 ```json
-{ 
+{
     "y": 34.5,
     "x": 44
 }
 ```
-## Delete module 
+## Delete module
 <strong>DELETE /api/modules/:moduleId</strong>
