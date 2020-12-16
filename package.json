@@ -92,6 +92,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "deploy": "netlify deploy -d build --prod",
     "clean": "rimraf ./build/static/js/*",
     "test:browser": "npm run clean && webpack-dev-server -d --config ./config/webpack.config.test --progress mocha!./test/tests.mocha.js --output-filename testBundle.js --colors",
     "lint": "eslint --ext .js --ext .jsx src/components/|| exit 0",
