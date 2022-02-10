@@ -43,7 +43,7 @@
     "json-loader": "0.5.4",
     "mocha": "^3.3.0",
     "mocha-loader": "^1.1.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
     "postcss-loader": "1.0.0",
